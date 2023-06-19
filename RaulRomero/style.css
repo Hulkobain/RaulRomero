@@ -95,6 +95,7 @@ body {
     color: white; /* Color del texto */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    padding-bottom: 60px;
   }
   
   #inicio h3 {
@@ -402,25 +403,53 @@ body {
   color: #a76a6a; /* Cambiar el color del icono al pasar el mouse */
 }
   /* Media queries para dispositivos móviles */
-  @media (max-width: 768px) {
-    header {
-      text-align: center;
-    }
-  
-    nav ul {
-      display: block;
-      text-align: center;
-    }
-  
-    nav ul li {
-      display: block;
-      margin-bottom: 10px;
-    }
-  
-    .proyecto {
-      width: 100%;
-    }
+/* Estilos para smartphones */
+@media only screen and (max-width: 480px) {
+  /* Ajustes generales */
+  body {
+    font-size: 14px;
   }
+  
+  /* Estilos específicos para elementos en smartphones */
+  .titulo-biografia {
+    font-size: 20px;
+  }
+  
+  .seccion-foto img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .proyecto {
+    margin: 5px;
+    padding: 10px;
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Ajustes generales */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Estilos específicos para elementos en tablets */
+  .titulo-biografia {
+    font-size: 24px;
+  }
+  
+  .seccion-foto img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .proyecto {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+
   
 
 /* FOTO DE PERFIL */
