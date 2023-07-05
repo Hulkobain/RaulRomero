@@ -419,8 +419,8 @@ body {
   /* Estilos específicos para dispositivos móviles */
     body {
       font-size: 16px;
-      margin: 300px;
-      padding: 300px;
+      margin: 10px auto;
+      padding: 10px;
     }
 }
 
