@@ -422,6 +422,11 @@ body {
       margin: 10px auto;
       padding: 10px;
     }
+    section {
+      font-size: 16px;
+      margin: 10px auto;
+      padding: 10px;
+    }
 }
 
 /* Estilos para tablets */
