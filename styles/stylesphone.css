@@ -1,5 +1,5 @@
 /* stylesphone.css */
-
+@media (max-width: 767px) {
 /* Estilos para el contenido */
 .content {
     padding: 10px; /* Ajusta el espaciado del contenido para dispositivos móviles */
@@ -42,4 +42,4 @@
   body {
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra toda la pantalla */
   }
-  
+}
