@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galería de imágenes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="image-container">
+      <img src="media/1.jpg" alt="Imagen 1">
+      <div class="overlay">
+        <div class="image-caption">Imagen 1</div>
+      </div>
+    </div>
+    <!-- Repite los siguientes bloques para cada imagen -->
+    <div class="image-container">
+      <img src="media/2.jpg" alt="Imagen 2">
+      <div class="overlay">
+        <div class="image-caption">Imagen 2</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="media/3.jpg" alt="Imagen 3">
+      <div class="overlay">
+        <div class="image-caption">Imagen 3</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="media/4.jpg" alt="Imagen 4">
+      <div class="overlay">
+        <div class="image-caption">Imagen 4</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="media/5.jpg" alt="Imagen 5">
+      <div class="overlay">
+        <div class="image-caption">Imagen 5</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="media/6.jpg" alt="Imagen 6">
+      <div class="overlay">
+        <div class="image-caption">Imagen 6</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
