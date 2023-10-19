@@ -1,126 +1,174 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Portfolio</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/stylesphone.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <script src="https://kit.fontawesome.com/1011fb6839.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <body>
+    <header class="header">
+      <a class="logo">Raúl Romero Montoro</a>
+      <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+      </nav>
+    </header>
 
-</head>
-<body>
-    
-    <div class="centered-content" data-aos="fade-up">
-        <div class="sidebar">
-            <ul>
-            <li><a href="#" onclick="mostrarContenido('sobreMi')">Sobre mí</a></li>
-            <li><a href="#" onclick="mostrarContenido('habilidades')">Habilidades</a></li>
-            <li><a href="#" onclick="mostrarContenido('proyectos')">Proyectos</a></li>
-            <li><a href="#" onclick="mostrarContenido('contacto')">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="main-content" data-aos="fade-up"> 
-            <div class="content" id="contenidoDefault" data-aos="fade-up">
-                
-                <h1>Raúl Romero Montoro</h1>
-                <h2>Junior FullStack Developer</h2>
-            </div>
-            <div class="content" id="sobreMi" style="display:none;" data-aos="fade-up">
-                
-                <div class="about-me" data-aos="fade-left"> 
-                <h2 >Sobre mí</h2>
-                <h3>Desarrollador de aplicaciones web</h3>
-                </div>
-                <div class="parrafo">
-                <p>Soy estudiante de desarrollo de aplicaciones web con conocimientos en lenguajes HTML, CSS, JavaScript y PHP entre otros.<br> Actualmente, busco una oportunidad para completar las prácticas extracurriculares.
-                    Me apasiona el aprendizaje, la ciberseguridad y la aplicación de tecnologías web modernas para crear soluciones interactivas.</p>
-                </div>
-                <div class="profile-image">
-                  <img src="media/perfil.jpg" alt="Mi foto" class="bordered-image">
-                </div>
-              </div>
-            
-              <div class="content" id="habilidades" style="display:none;" data-aos="fade-left">
-                <h2>Habilidades</h2>
-                <div class="skills-section">
-                    <div class="languages">
-                        <h3>Lenguajes y Tecnologías</h3>
-                        <ul>
-                            <li><i class="fab fa-js"></i> <!-- JavaScript --></li>
-                            <li><i class="fab fa-java"></i> <!-- Java --></li>
-                            <li><i class="fab fa-html5"></i> <!-- HTML --></li>
-                            <li><i class="fab fa-css3"></i> <!-- CSS --></li>
-                            <li><i class="fab fa-php"></i> <!-- PHP --></li>
-                            <li><i class="fas fa-database"></i> <!-- MySQL --></li>
-                        </ul>
-                    </div>
-                    <div class="tools">
-                        <h3>Herramientas</h3>
-                        <ul>
-                            <li><i class="fab fa-git"></i> <!-- Git --></li>
-                            <li><i class="fab fa-github"></i> <!-- GitHub --></li>
-                            <li><i class="fab fa-wordpress"></i> <!-- WordPress --></li>
-                            <li><i class="fas fa-code"></i> <!-- Visual Studio Code --></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="content" id="proyectos" style="display:none;" data-aos="zoom-in-up">
-                <h2>Proyectos</h2>
-                <div class="projects-container" data-aos="fade-up">
-                    <div class="project">
-                        <h3>Calculadora</h3>
-                        <p>Una calculadora sencilla para realizar operaciones matemáticas.</p>
-                        <a href="calculator/calculadora.html" target="_blank">Ver Proyecto</a>
-                    </div>
-                    <div class="project" data-aos="fade-up">
-                        <h3>Lista de Tareas</h3>
-                        <p>Una aplicación para gestionar tus tareas diarias.</p>
-                        <a href="ListaTareas/index.html" target="_blank">Ver Proyecto</a>
-                    </div>
-                    <div class="project">
-                        <h3>Galería</h3>
-                        <p>Una galería de imágenes para mostrar tus fotografías favoritas.</p>
-                        <a href="Galeria/index.html" target="_blank">Ver Proyecto</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content" id="contacto" style="display:none;" data-aos="zoom-in-up">
-                <h2>Contacto</h2>
-                <div class="contact-links">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:raul.romero.6696@gmail.com">raul.romero.6696@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/ra%C3%BAl-romero-montoro-8b140b27a/" target="_blank">LinkedIn</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Hulkobain" target="_blank">GitHub</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Hulkobain/RaulRomero/tree/portfolio/RaulRomero" target="_blank">Código del Portfolio</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-file-pdf"></i>
-                        <a href="media/CV RAUL.pdf" target="_blank">Currículum PDF</a>
-                    </div>
-                </div>
-            </div>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hola, esta es mi</h3>
+        <h1>Smart Page</h1>
+        <h3>Y soy <span>Frontend Developer</span></h3>
+        <p>
+          Conocimientos en lenguajes HTML, CSS, JavaScript y PHP entre otros.
+          <br />
+          
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
         
+      </div>
+
+      <div class="home-img">
+        <img src="./images/perfil.jpg" alt="LogoMy" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/portfolio3.jpg" alt="LogoMy" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">Sobre <span> MI</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          Soy un apasionado programador web developer con una mente creativa y un enfoque técnico para los desafíos digitales. 
+          <br>Mi viaje en el mundo del desarrollo web comenzó con una curiosidad insaciable por cómo las líneas de código pueden transformar ideas abstractas en experiencias interactivas y atractivas.
+        </p>
+        <a href="#" class="btn">CV</a>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills-content">
+        <h2 class="heading">Mis Habilidades</h2>
+        <div class="skill">
+          <h3><i class='bx bxl-html5'></i> HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3><i class='bx bxl-css3'></i> CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3><i class='bx bxl-javascript'></i> JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3><i class='bx bxl-java'></i> Java</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3><i class='bx bxl-php'></i> PHP</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3><i class='bx bxl-mysql'></i> MySQL</h3>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 65%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools">
+        <h3>Herramientas</h3>
+        <ul>
+          <li><i class='bx bxl-git'></i> Git</li>
+          <li><i class='bx bxl-github'></i> GitHub</li>
+          <li><i class='bx bxl-wordpress'></i> WordPress</li>
+          <li><i class='bx bxl-vscode'></i> Visual Studio Code</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h2 class="heading">Mis Proyectos</h2>
+        <div class="project-container">
+          <div class="project">
+            <h3>LAS 3 EN RAYA</h3>
+            <p>El juego completo</p>
+            <a href="projects/project1/index.html" target="_blank">Ver Proyecto</a>
+          </div>
+          <div class="project">
+            <h3>EDICIÓN DE FOTOS</h3>
+            <p>Permite obtener el color seleccionado</p>
+            <a href="projects/project2/index.html" target="_blank">Ver Proyecto</a>
+          </div>
+          <div class="project">
+            <h3>CARTAS 3D</h3>
+            <p>Descripción breve del Proyecto 2.</p>
+            <a href="projects/project3/index.html" target="_blank">Ver Proyecto</a>
+          </div>
+          <div class="project">
+            <h3>INTRO NETFLIX</h3>
+            <p>Video de introducción de Neftlix</p>
+            <a href="projects/project4/index.html" target="_blank">Ver Proyecto</a>
+          </div>
+          <div class="project">
+            <h3>LISTA DE TAREAS</h3>
+            <p>Permite listar tareas</p>
+            <a href="projects/project5/index.html" target="_blank">Ver Proyecto</a>
+          </div>
+          <!-- Añade más proyectos según sea necesario -->
+        </div>
+      </div>
+    </section>
+    
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Contacto</h2>
+      <p>¡Ponte en contacto conmigo para cualquier consulta o proyecto!</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class='bx bx-mail-send'></i>
+          <span>Email: raul.romero.6696@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class='bx bx-phone-call'></i>
+          <span>Teléfono: +34 722 34 33 35</span>
+        </div>
+      </div>
     </div>
-  <script src="app/script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+  </footer>
+  
 </html>
