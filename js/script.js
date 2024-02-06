@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector(".navbar");
 
 let sections = document.querySelectorAll("section");
@@ -30,3 +31,10 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img", { origin: "bottom" });
+
+const list = document.querySelectorAll(".list");
+function activelink() {
+  list.forEach((item) => item.classList.remove("active"));
+  this.classList.add("active");
+}
+list.forEach((item) => item.addEventListener("click", activelink));
