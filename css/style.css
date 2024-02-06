@@ -329,6 +329,8 @@ a.active {
   background: var(--second-bg-color);
   color: #fff;
   padding: 10rem 9% 2rem;
+  padding-left: 300px;
+  padding-right: 200px;
 }
 
 .projects-content {
