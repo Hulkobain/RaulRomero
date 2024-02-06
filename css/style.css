@@ -423,7 +423,7 @@ a.active {
   font-size: 1.8rem;
 }
 
-
+/* WEB RESPONSIVA DISPOSITIVOS MOVILES */
 @media only screen and (max-width: 768px) {
   .home h1, .home h3, .about h2, .about h3 {
     font-size: 2rem;
@@ -448,5 +448,32 @@ a.active {
   }
   .footer {
     padding: 1rem;
+  }
+  .skill-box {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+  
+  .skill-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #6b1f1f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .tool-card {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  
+  .tool-card i {
+    font-size: 3rem;
+  }
+  
+  .tool-card h4 {
+    font-size: 1.5rem;
   }
 }
