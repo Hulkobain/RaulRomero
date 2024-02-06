@@ -187,53 +187,137 @@ a.active {
   padding: 10rem 9% 2rem;
 }
 
-.skills-content {
+.skills {
+  background-color: #f9f9f9;
+  padding: 40px 10;
+  margin: 1000;
+}
+
+.skills .heading {
   text-align: center;
+  margin-bottom: px;
 }
 
-.skill {
-  margin-bottom: 3rem;
+.skills .skill-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.skill h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+.skills .skill-box {
+  width: 31%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(77, 24, 24, 0.2);
+  border-radius: 5px;
+  padding: 50px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
-.skill-bar {
-  background: var(--second-bg-color);
-  height: 20px;
-  border-radius: 10px;
-  width: 100%;
+.skills .skill-box:hover {
+  transform: translateY(-5px);
 }
 
-.skill-level {
-  height: 100%;
-  border-radius: 10px;
-  background: var(--main-color);
+.skills .skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills .skill-header i {
+  font-size: 3rem;
+  margin-right: 10px;
+  color: #5b5b5b;
+}
+
+.skills .skill-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.skills .skill-bar {
+  height: 10px;
+  background-color: #6b1f1f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.skills .skill-box:nth-child(1) .skill-bar {
+  width: 90%;
+  background-color: #e04040;
+}
+
+.skills .skill-box:nth-child(2) .skill-bar {
+  width: 80%;
+  background-color: #f5b041;
+}
+
+.skills .skill-box:nth-child(3) .skill-bar {
+  width: 85%;
+  background-color: #4caf50;
+}
+
+.skills .skill-box:nth-child(4) .skill-bar {
+  width: 75%;
+  background-color: #2196f3;
+}
+
+.skills .skill-box:nth-child(5) .skill-bar {
+  width: 70%;
+  background-color: #f44336;
+}
+
+.skills .skill-box:nth-child(6) .skill-bar {
+  width: 80%;
+  background-color: #9c27b0;
 }
 /* Herramientas */
 .tools {
-  margin-top: 3rem;
+  background-color: #ffffff;
+  padding: 40px;
+  
 }
 
 .tools h3 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.tools ul {
-  list-style: none;
-  padding: 0;
+.tool-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.tools li {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.tool-card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
-.tools li i {
-  margin-right: 0.5rem;
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-card i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.tool-card h4 {
+  margin: 0;
+  color: #333;
 }
 
 

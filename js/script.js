@@ -38,3 +38,12 @@ function activelink() {
   this.classList.add("active");
 }
 list.forEach((item) => item.addEventListener("click", activelink));
+
+const circleProgressElements = document.querySelectorAll('.circle-progress');
+
+circleProgressElements.forEach((element) => {
+  const value = element.getAttribute('data-value');
+  const circleProgressValue = element.querySelector('.circle-progress__value--primary');
+
+  circleProgressValue.style.transform = `scaleX(${value})`;
+});
