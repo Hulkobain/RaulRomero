@@ -476,4 +476,15 @@ a.active {
   .tool-card h4 {
     font-size: 1.5rem;
   }
+  .product__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product__list {
+    margin-bottom: 2rem;
+  }
+  .product__viewBtn a {
+    font-size: 1.5rem;
+  }
 }
