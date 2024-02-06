@@ -183,11 +183,13 @@ a.active {
 /* PARTE DE SECCION HABILIDADES */
 .skills {
   background: var(--bg-color);
-  color: #fffefe;
+  color: #f7f7f7;
   padding: 5rem 9% rem;
   background-color: #1f242d;
   padding: 40px 10;
   margin: 1000;
+  text-align: center;
+  
 }
 
 
