@@ -66,7 +66,7 @@
     opacity: 0;
     font-weight: 600;
     font-size: 0.6em;
-    color: #222327;
+    color: 0ef;
     transition: 0.5s;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -94,7 +94,7 @@
     bottom: 13px;
     width: 80%;
     height: 14px;
-    background: #0ef;
+    
     border-radius: 10px;
   }
   
