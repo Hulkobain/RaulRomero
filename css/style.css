@@ -422,3 +422,31 @@ a.active {
 .contact-item span {
   font-size: 1.8rem;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .home h1, .home h3, .about h2, .about h3 {
+    font-size: 2rem;
+  }
+  .home-content, .about-content {
+    text-align: center;
+  }
+  .home-img img, .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  .skill-bar {
+    width: 80%;
+  }
+  .tool-card {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  .product__img {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    padding: 1rem;
+  }
+}
