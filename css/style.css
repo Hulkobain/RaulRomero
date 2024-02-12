@@ -328,7 +328,7 @@ a.active {
 /* PROYECTOS */
 
 .projects {
-  background: var(--second-bg-color);
+  background-image:url('../images/fondo.jpg');
   color: #fff;
   padding: 5rem 2rem; /* Ajuste del padding para dispositivos móviles */
 }
